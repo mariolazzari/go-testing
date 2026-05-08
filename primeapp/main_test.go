@@ -21,6 +21,9 @@ func Test_isPrime(t *testing.T) {
 		{
 			"one", 1, false, "1 is not prime, by definition!",
 		},
+		{
+			"one", -1, false, "Negative numbers are not prime, by definition!",
+		},
 	}
 
 	for _, e := range primeTests {
