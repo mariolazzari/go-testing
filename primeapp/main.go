@@ -1,18 +1,3 @@
-# Introduction to Testing in Go (Golang)
-
-## Introduction
-
-[Udemy](https://www.udemy.com/course/introduction-to-testing-in-go-golang/learn/lecture/33522068#overview)
-
-## Setup
-
-[Go](https://go.dev/)
-
-## Simple testing
-
-### Cli application
-
-```go
 package main
 
 import "fmt"
@@ -45,4 +30,3 @@ func isPrime(n int) (bool, string) {
 
 	return true, fmt.Sprintf("%d is a prime number!", n)
 }
-```
