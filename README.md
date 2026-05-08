@@ -46,3 +46,34 @@ func isPrime(n int) (bool, string) {
 	return true, fmt.Sprintf("%d is a prime number!", n)
 }
 ```
+
+### First test
+
+```go
+package main
+
+import "testing"
+
+func Test_isPrime(t *testing.T) {
+	result, msg := isPrime(0)
+	if result {
+		t.Errorf("with %d as test parameter: expected false", 0)
+	}
+	if msg != "0 is not prime, by definition!" {
+		t.Error("wrong message returned:", msg)
+	}
+
+	result, msg = isPrime(7)
+	if !result {
+		t.Errorf("with %d as test parameter: expected true", 7)
+	}
+	if msg != "7 is a prime number!" {
+		t.Error("wrong message returned:", msg)
+	}
+}
+```
+
+```sh
+go test .
+go test -v .
+```
