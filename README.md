@@ -692,3 +692,23 @@ func Test_readUserInput(t *testing.T) {
 ```
 
 ## Test suites
+
+### Single test
+
+```sh
+go test .
+go test -v .
+go test -run Test_isPrime
+go test -v -run Test_isPrime
+```
+
+### Multiple tests
+
+```sh
+go test -run Test_alpha_isPrime
+go test -v -run Test_alpha_isPrime
+```
+
+## Web applications
+
+### Simple app
