@@ -712,3 +712,11 @@ go test -v -run Test_alpha_isPrime
 ## Web applications
 
 ### Simple app
+
+```sh
+go mod init webapp
+go get -u github.com/go-chi/chi/v5
+go get -u github.com/go-chi/chi/v5/middleware
+go mod tidy
+go run ./cmd/web
+```
