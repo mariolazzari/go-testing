@@ -9,8 +9,8 @@ import (
 )
 
 func Test_application_routes(t *testing.T) {
-	var registered = []struct{
-		route string
+	var registered = []struct {
+		route  string
 		method string
 	}{
 		{"/", "GET"},
